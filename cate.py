@@ -53,7 +53,7 @@ def oracle_gen(base_fn, tau_fn, prop_fn):
     return oracle
 
 
-def dml(y, T, X, Xtest, n_x):
+def dml(y, T, X, Xtest, n_x): #10-fold cross-fitting
     model_y = first_stage_reg(X, y)
     print(model_y)
     model_t = first_stage_clf(X, T)

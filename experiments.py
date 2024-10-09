@@ -35,6 +35,9 @@ def gen_data(n, d, base_fn, tau_fn, prop_fn, sigma, dist='uniform'):
         sigma * np.random.normal(0, 1, size=(n,))
     return y, T, X, Xtest
 
+# the centered_uniform distribution generates values from a uniform distribution over the interval 
+# [−0.5,0.5]. This means that the values are centered around zero, 
+# allowing for both negative and positive values.
 
 def get_data_generator(setup, n, d, sigma):
     
